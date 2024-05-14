@@ -14,6 +14,8 @@
 
 # About
 
+A minimal repo to show how to make a blob transaction. 
+
 ## What are blobs?
 
 BLObs or "Binary Large Objects" are a way to store large amounts of data on the blockchain. In this repo, we show how to send a blob. Keep in mind, that all blobs *must* be at least 4,096 words in length, with each word being 32 bytes long. Aka, at least 131,072 bytes.
