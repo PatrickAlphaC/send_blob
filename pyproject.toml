@@ -1,0 +1,27 @@
+[project]
+name = "send-blob"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "PatrickAlphac", email = "54278053+PatrickAlphaC@users.noreply.github.com" },
+]
+dependencies = ["web3>=6.18.0", "python-dotenv>=1.0.1"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+"send-blob" = "send_blob:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/send_blob"]
